@@ -5,34 +5,23 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_bin_to_dez"
+            android:title="Binär zu Dezimal" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_bin_to_hex"
+            android:title="Binär zu Hexadzimal" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_dez_to_bin"
+            android:title="Dezimal zu Binär" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_dez_to_hex"
+            android:title="Dezimal zu Hexadezimal" />
+        <item
+            android:id="@+id/nav_hex_to_bin"
+            android:title="Hexadezimal zu Binär" />
+        <item
+            android:id="@+id/nav_hex_to_dez"
+            android:title="Hexadezimal zu Dezimal" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>
