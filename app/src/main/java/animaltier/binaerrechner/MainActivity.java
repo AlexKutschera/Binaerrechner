@@ -16,10 +16,19 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private enum Modes {
+        BinToDez, BinToHex, DezToBin, DezToHex, HexToBin, HexToDez
+    }
+
+    private Modes mode;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mode = Modes.BinToDez;
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -48,7 +57,14 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
 
         switch (item.getItemId()){
-
+            case R.id.nav_bin_to_dez: {
+                mode = Modes.BinToDez;
+                break;
+            }
+            case R.id.nav_bin_to_hex: {
+                mode = Modes.BinToHex;
+                break;
+            }
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
